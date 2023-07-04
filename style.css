@@ -57,22 +57,59 @@ body > div{
 }
 
 #info > h2{
-    font-weight: 500;
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 21px;
 }
 
 #info > h2:last-child{
     font-weight: 300;
-    font-style: italic;
+    color: var(--text-color);
 }
 
-/*
-Fontes:
-Light 300 Italic
-Medium 500
-Bold 700
+form {
+    margin-left: 30px;
+    margin-top: 60px;
+    color: var(--form-color);
+    font-family: 'Work Sans', sans-serif;
+}
 
-Input:
-position: relative;
-   z-index: 1;
-*/
+form > label{
+    font-size: 22px;
+}
+
+#input-content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 112%;
+}
+
+form > div > input{
+    height: 3rem;
+    width: 95%;
+    padding: 1px 2px;
+    border-style: none;
+    border-left: solid 10px var(--title-color);
+    font-size: 1.5rem;
+}
+
+form > div > input:focus{
+    box-shadow: 0 0 0 0;
+    outline:0;
+}
+
+form > div > button{
+    flex-grow: 1;
+    height: 3rem;    
+    background-color: var(--bg-button-color);
+    border-style: none;
+}
+
+#form-container > a{
+    margin-left: 30px;
+    font-size: 21px;
+}
